@@ -1,0 +1,56 @@
+{
+  "type": "full-release",
+  "name": "rabbitmq-on-ambari",
+  "version": "1.0.0",
+  "description": "Single node RabbitMQ Broker with Management Plugin",
+  "prerequisites": {
+    "min_ambari_version": "2.4.0.0",
+    "max-ambari-version" : ""
+  },
+  "artifacts": [
+    {
+      "name": "rabbitmq-service-definitions",
+      "type": "service-definitions",
+      "source_dir": "common-services",
+      "service_version": "3.6.10"
+    },
+    {
+      "name" : "rabbitmq-extension-definitions",
+      "type" : "extension-definitions",
+      "source_dir": "extensions"
+    },
+    {
+      "name": "rabbitmq-addon-service-definitions",
+      "type": "stack-addon-service-definitions",
+      "source_dir": "custom-services",
+      "service_versions_map": [
+        {
+          "service_name" : "RABBITMQ",
+          "service_version" : "3.6.10",
+          "applicable_stacks" : [
+            {
+              "stack_name" : "HDP",
+              "stack_version" : "2.4"
+            },
+            {
+              "stack_name" : "HDP",
+              "stack_version" : "2.5"
+            },
+            {
+              "stack_name" : "HDP",
+              "stack_version" : "2.6"
+            },
+            {
+              "stack_name" : "HDP",
+              "stack_version" : "3.0"
+            },
+            {
+              "stack_name" : "HDP",
+              "stack_version" : "3.1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
