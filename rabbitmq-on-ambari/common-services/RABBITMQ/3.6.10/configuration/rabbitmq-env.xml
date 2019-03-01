@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+  <property>
+    <name>node_name</name>
+    <value>rabbit@localhost</value>
+    <display-name>RabbitMQ Node Name</display-name>
+    <description>node name should be unique per erlang-node-and-machine</description>
+    <value-attributes>
+      <type>TEXT</type>
+    </value-attributes>
+  </property>
+  <property>
+    <name>listen_interface</name>
+    <value>0.0.0.0</value>
+    <display-name>Listen Interface</display-name>
+    <description>0.0.0.0 will bind to all interfaces</description>
+    <value-attributes>
+      <type>TEXT</type>
+    </value-attributes>
+  </property>
+  <property>
+    <name>port</name>
+    <value>5672</value>
+    <display-name>Port</display-name>
+    <description>RabbitMQ Listen Port</description>
+    <value-attributes>
+      <type>TEXT</type>
+    </value-attributes>
+  </property>
+  <property>
+    <name>admin_username</name>
+    <value>admin</value>
+    <display-name>Admin Username</display-name>
+    <value-attributes>
+      <type>TEXT</type>
+    </value-attributes>
+  </property>
+  <property>
+    <name>admin_password</name>
+    <value>drowssap</value>
+    <display-name>Admin Password</display-name>
+    <description>Default value is drowssap.</description>
+    <value-attributes>
+      <type>PASSWORD</type>
+    </value-attributes>
+  </property>
+</configuration>
