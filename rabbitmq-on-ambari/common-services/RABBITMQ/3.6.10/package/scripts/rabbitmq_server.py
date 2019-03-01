@@ -8,6 +8,7 @@ class RabbitmqServer(Script):
         import params
         env.set_params(params)
         Logger.info("Install RabbitMQ Key")
+        # @todo Just works for debian based OS, need to replace with more general way to support centos, fedora and ...
         Execute("echo \"deb http://dl.bintray.com/rabbitmq-erlang/debian bionic erlang\" | sudo tee /etc/apt/sources.list.d/bintray.erlang.list")
         Execute("apt-get update")
         create_user(params)
