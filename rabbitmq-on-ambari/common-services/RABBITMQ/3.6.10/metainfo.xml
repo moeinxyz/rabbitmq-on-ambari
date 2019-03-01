@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<metainfo>
+    <schemaVersion>2.0</schemaVersion>
+    <services>
+        <service>
+            <name>RABBITMQ</name>
+            <displayName>RabbitMQ</displayName>
+            <comment>Lightweight message broker</comment>
+            <version>3.6.10</version>
+            <components>
+                <component>
+                    <name>RABBITMQ_SERVER</name>
+                    <displayName>RabbitMQ Server</displayName>
+                    <category>MASTER</category>
+                    <cardinality>1</cardinality>
+                    <commandScript>
+                        <script>scripts/rabbitmq_server.py</script>
+                        <scriptType>PYTHON</scriptType>
+                        <timeout>600</timeout>
+                    </commandScript>
+                </component>
+            </components>
+            <osSpecifics>
+                <osSpecific>
+                    <osFamily>debian8,ubuntu16,ubuntu18</osFamily>
+                    <packages>
+                        <package><name>apt-transport-https</name></package>
+                        <package><name>rabbitmq-server</name></package>
+                    </packages>
+                </osSpecific>
+            </osSpecifics>
+            <configuration-dependencies>
+                <config-type>rabbitmq-env</config-type>
+                <config-type>rabbitmq-management-plugin</config-type>
+            </configuration-dependencies>
+            <restartRequiredAfterChange>true</restartRequiredAfterChange>
+			<quickLinksConfigurations>
+				<quickLinksConfiguration>
+					<fileName>quicklinks.json</fileName>
+					<default>true</default>
+				</quickLinksConfiguration>
+			</quickLinksConfigurations>
+        </service>
+    </services>
+</metainfo>
