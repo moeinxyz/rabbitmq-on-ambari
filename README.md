@@ -1,7 +1,7 @@
-#RabbitMQ on Ambari
+# RabbitMQ on Ambari
 #### Install, configure and monitor single node rabbitmq server on ambari cluster
 
-##Installation
+## Installation
 
 **Run following commands on run own desktop**
 ```bash
@@ -29,7 +29,7 @@ sudo apt-key adv --keyserver "hkps.pool.sks-keyservers.net" --recv-keys "0x6B73A
  * add rabbitmq service from ... section
  * follow ui and enjoy rabbitmq on your cluster
  
-##After Installation
+## After Installation
 * This package will remove guest user
 * This package will add new user with admin privileges based on your configurations on installation time. You can change admin password on configurations
 * This package will install management-plugin by default, you can change its port on configuration or installation process.
