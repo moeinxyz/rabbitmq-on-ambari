@@ -6,7 +6,7 @@
             <name>RABBITMQ</name>
             <displayName>RabbitMQ</displayName>
             <comment>Lightweight message broker</comment>
-            <version>3.6.10</version>
+            <version>3.7.12</version>
             <components>
                 <component>
                     <name>RABBITMQ_SERVER</name>
@@ -25,7 +25,7 @@
                     <osFamily>debian8,ubuntu16,ubuntu18</osFamily>
                     <packages>
                         <package><name>apt-transport-https</name></package>
-                        <package><name>rabbitmq-server</name></package>
+                        <package><name>rabbitmq-server=3.7.12-1</name></package>
                     </packages>
                 </osSpecific>
             </osSpecifics>

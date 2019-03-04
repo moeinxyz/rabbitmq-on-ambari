@@ -4,8 +4,8 @@
     <services>
         <service>
             <name>RABBITMQ</name>
-            <version>3.6.10</version>
-            <extends>common-services/RABBITMQ/3.6.10</extends>
+            <version>3.7.12</version>
+            <extends>common-services/RABBITMQ/3.7.12</extends>
         </service>
     </services>
 </metainfo>

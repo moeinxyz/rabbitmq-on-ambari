@@ -21,7 +21,8 @@ ambari-server start
 **Connect to machine which you have selected to host rabbitmq-server**
 It can be you ambari-server machine too!
 ```bash
-sudo apt-key adv --keyserver "hkps.pool.sks-keyservers.net" --recv-keys "0x6B73A36E6026DFCA"
+wget -O- https://dl.bintray.com/rabbitmq/Keys/rabbitmq-release-signing-key.asc | sudo apt-key add -
+wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -
 ```
 
 **You just need browser**
