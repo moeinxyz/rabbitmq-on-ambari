@@ -1,5 +1,9 @@
 # RabbitMQ on Ambari
-#### Install, configure and monitor single node rabbitmq server on ambari cluster
+##### Install, configure and monitor single node rabbitmq server on ambari cluster
+
+[![Open Issues](https://img.shields.io/github/issues-raw/moein7tl/rabbitmq-on-ambari?style=for-the-badge)](https://github.com/moein7tl/rabbitmq-on-ambari/issues)
+[![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/moein7tl/rabbitmq-on-ambari?style=for-the-badge)](https://github.com/moein7tl/rabbitmq-on-ambari/pulls)
+[![License](https://img.shields.io/github/license/moein7tl/rabbitmq-on-ambari?style=for-the-badge)](https://github.com/moein7tl/rabbitmq-on-ambari/blob/master/LICENSE)
 
 ## Installation
 
@@ -38,4 +42,3 @@ wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-ke
 ## To Do
  * Support clustering
  * Support centos and fedora
- * 
